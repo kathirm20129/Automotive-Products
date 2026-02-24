@@ -17,17 +17,17 @@ import {
 } from 'lucide-react';
 
 const categories = [
-    { icon: Disc, name: "Оригинальные запчасти", count: "730 товаров" },
-    { icon: Settings, name: "Неоригинальные запчасти", count: "278 товаров" },
-    { icon: Warehouse, name: "Запчасти ВАЗ, ГАЗ, КАМАЗ", count: "730 товаров" },
-    { icon: Square, name: "Кузовные запчасти", count: "730 товаров" },
-    { icon: Wrench, name: "Запчасти для ТО", count: "730 товаров", isActive: true },
-    { icon: Wind, name: "Автостёкла", count: "730 товаров" },
-    { icon: Droplet, name: "Автомасла", count: "730 товаров" },
-    { icon: FlaskConical, name: "Автохимия", count: "730 товаров" },
-    { icon: CircleDot, name: "Диски", count: "730 товаров" },
-    { icon: Battery, name: "Аккумуляторы", count: "730 товаров" },
-    { icon: Lightbulb, name: "Автолампы", count: "730 товаров" },
+    { icon: Disc, name: "Original Parts", count: "730 products" },
+    { icon: Settings, name: "Aftermarket Parts", count: "278 products" },
+    { icon: Warehouse, name: "Parts for VAZ, GAZ, KAMAZ", count: "730 products" },
+    { icon: Square, name: "Body Parts", count: "730 products" },
+    { icon: Wrench, name: "Maintenance Parts", count: "730 products", isActive: true },
+    { icon: Wind, name: "Auto Glass", count: "730 products" },
+    { icon: Droplet, name: "Motor Oils", count: "730 products" },
+    { icon: FlaskConical, name: "Auto Chemicals", count: "730 products" },
+    { icon: CircleDot, name: "Wheels & Rims", count: "730 products" },
+    { icon: Battery, name: "Batteries", count: "730 products" },
+    { icon: Lightbulb, name: "Auto Bulbs", count: "730 products" },
 ];
 
 const CategoryGrid = () => {
@@ -71,7 +71,7 @@ const CategoryGrid = () => {
                         <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0 border border-white/20 backdrop-blur-sm">
                             <BarChart3 size={28} />
                         </div>
-                        <h3 className="font-bold text-[20px] tracking-tight truncate">Поставщикам</h3>
+                        <h3 className="font-bold text-[20px] tracking-tight truncate">For Suppliers</h3>
                     </div>
 
                     <div className="absolute right-9 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0 relative z-10 group-hover:bg-[#6C5DD3] group-hover:translate-x-1 transition-all duration-300 backdrop-blur-md border border-white/30 shadow-lg">

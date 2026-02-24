@@ -18,11 +18,11 @@ const Hero = () => {
                     {/* Content Overlay */}
                     <div className="relative z-20 px-16 w-full flex flex-col justify-center h-full">
                         <h1 className="text-[44px] md:text-[56px] font-black text-white leading-tight mb-4 tracking-tight">
-                            Оригинальные автомасла <br />
-                            со скидкой <span className="inline-block bg-[#FF6B35] px-4 py-1 rounded-2xl ml-2">15%</span>
+                            Original Motor Oils <br />
+                            at a discount of <span className="inline-block bg-[#FF6B35] px-4 py-1 rounded-2xl ml-2">15%</span>
                         </h1>
                         <p className="text-white/70 text-[18px] mb-12 font-medium tracking-wide">
-                            Акция действует с 1 по 30 июня 2021
+                            Promotion valid from June 1 to June 30, 2021
                         </p>
 
                         {/* Pagination Indicators */}

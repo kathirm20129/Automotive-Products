@@ -3,41 +3,41 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Search, Plus, Minus } from 'lucide-react';
 
 const breadcrumbs = [
-    { label: "Каталоги оригинальных запчастей", to: "/catalog" },
+    { label: "Catalog of Original Parts", to: "/catalog" },
     { label: "Audi", to: "/catalog" },
-    { label: "Поиск по параметрам Audi", to: "/catalog" },
-    { label: "Запчасти Audi 80/90/Avant", to: null },
+    { label: "Search by Audi Parameters", to: "/catalog" },
+    { label: "Audi 80/90/Avant Parts", to: null },
 ];
 
 const categories = [
     {
         id: 1,
-        name: "Двигатель",
+        name: "Engine",
         expanded: true,
         children: [
             {
                 id: 11,
-                name: "Блок картер",
+                name: "Block & Crankcase",
                 active: true,
                 children: [
-                    { id: 111, name: "Вал балансирный, промежуточный" },
-                    { id: 112, name: "Вентиляция" },
-                    { id: 113, name: "Гильза цилиндра" },
+                    { id: 111, name: "Balance / Intermediate Shaft" },
+                    { id: 112, name: "Ventilation" },
+                    { id: 113, name: "Cylinder Liner" },
                 ],
             },
         ],
     },
-    { id: 2, name: "Детали для ТО", expanded: false, children: [] },
-    { id: 3, name: "Детали кузова", expanded: false, children: [], highlighted: true },
-    { id: 4, name: "Детали салона", expanded: false, children: [] },
-    { id: 5, name: "Дополнительное оборудование", expanded: false, children: [] },
-    { id: 6, name: "Отопление / кондиционирование", expanded: false, children: [] },
-    { id: 7, name: "Рулевое управление", expanded: false, children: [] },
-    { id: 8, name: "Система выхлопа", expanded: false, children: [] },
-    { id: 9, name: "Система охлаждения", expanded: false, children: [] },
-    { id: 10, name: "Топливная система", expanded: false, children: [] },
-    { id: 11, name: "Тормозная система", expanded: false, children: [] },
-    { id: 12, name: "Трансмиссия", expanded: false, children: [] },
+    { id: 2, name: "Service Parts", expanded: false, children: [] },
+    { id: 3, name: "Body Parts", expanded: false, children: [], highlighted: true },
+    { id: 4, name: "Interior Parts", expanded: false, children: [] },
+    { id: 5, name: "Additional Equipment", expanded: false, children: [] },
+    { id: 6, name: "Heating / Air Conditioning", expanded: false, children: [] },
+    { id: 7, name: "Steering", expanded: false, children: [] },
+    { id: 8, name: "Exhaust System", expanded: false, children: [] },
+    { id: 9, name: "Cooling System", expanded: false, children: [] },
+    { id: 10, name: "Fuel System", expanded: false, children: [] },
+    { id: 11, name: "Brake System", expanded: false, children: [] },
+    { id: 12, name: "Transmission", expanded: false, children: [] },
 ];
 
 const PartsGroupPage = () => {
@@ -77,7 +77,7 @@ const PartsGroupPage = () => {
 
             {/* Page Title */}
             <h1 className="text-[26px] font-black text-[#1A1B1E] mb-7 tracking-tight">
-                Запчасти Audi Audi 80/90/Avant
+                Audi 80/90/Avant Parts
             </h1>
 
             {/* Main White Card */}
@@ -88,7 +88,7 @@ const PartsGroupPage = () => {
                         type="text"
                         value={search}
                         onChange={e => setSearch(e.target.value)}
-                        placeholder="Поиск по имени группы"
+                        placeholder="Search by group name"
                         className="w-full bg-[#F8F9FA] border border-[#E9ECEF] rounded-xl px-4 py-2.5 pr-10 text-[14px] outline-none focus:border-[#6C5DD3] transition-colors placeholder:text-[#ADB5BD]"
                     />
                     <Search size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#ADB5BD]" />

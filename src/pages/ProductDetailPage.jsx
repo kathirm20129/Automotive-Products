@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, MapPin, ArrowUpDown, ShoppingCart, ChevronDown, Star } from 'lucide-react';
 
 const breadcrumbs = [
-    { label: "Каталог оригинальных запчастей", to: "/catalog" },
+    { label: "Catalog of Original Parts", to: "/catalog" },
     { label: "Audi", to: "#" },
-    { label: "Поиск по параметрам Audi", to: "#" },
-    { label: "Запчасти Audi Q5", to: "#" },
-    { label: "Шайба пламегасящей форсунки дизельной", to: null },
+    { label: "Search by Audi Parameters", to: "#" },
+    { label: "Audi Q5 Parts", to: "#" },
+    { label: "Diesel Injector Washer", to: null },
 ];
 
 const mainParts = [
@@ -17,12 +17,12 @@ const mainParts = [
         rating: 4,
         trusted: true,
         rows: [
-            { name: "Прокладка, крышка головки цилиндра", qty: "1 шт.", days: "1 дн.", price: "56 564 ₽", count: 1, highlighted: false, badge: null },
-            { name: "Кольцо уплотнительное кл крышки", qty: "3 шт.", days: "2 дн.", price: "62 567 ₽", count: 2, highlighted: true, badge: "Дилер" },
-            { name: "Автозапчасти/Сальник вала", qty: "5 шт.", days: "3 дн.", price: "78 560 ₽", count: 1, highlighted: false, badge: null },
+            { name: "Cylinder Head Cover Gasket", qty: "1 pc.", days: "1 day", price: "$690", count: 1, highlighted: false, badge: null },
+            { name: "Valve Cover Seal Ring", qty: "3 pcs.", days: "2 days", price: "$762", count: 2, highlighted: true, badge: "Dealer" },
+            { name: "Auto Parts / Shaft Seal", qty: "5 pcs.", days: "3 days", price: "$957", count: 1, highlighted: false, badge: null },
         ],
-        summary: "от 1 дн.",
-        summaryPrice: "от 52 560 ₽",
+        summary: "from 1 day",
+        summaryPrice: "from $640",
         moreOffers: 9,
     }
 ];
@@ -33,12 +33,12 @@ const analogueParts = [
         supplierId: "33208609838",
         trusted: true,
         rows: [
-            { name: "Прокладка уплотнительная крышки ГБЦ", qty: "1 шт.", days: "1 дн.", price: "56 564 ₽", count: 1, highlighted: false, badge: null },
-            { name: "Прокладка гбц vag 3.0tdi 12-", qty: "3 шт.", days: "2 дн.", price: "62 567 ₽", count: 2, highlighted: true, badge: "Дилер" },
-            { name: "Кольцо уплотнительное 37*13мм AUDI, VW 2010-", qty: "5 шт.", days: "3 дн.", price: "78 560 ₽", count: 1, highlighted: false, badge: null },
+            { name: "Cylinder Head Cover Sealing Gasket", qty: "1 pc.", days: "1 day", price: "$690", count: 1, highlighted: false, badge: null },
+            { name: "Head Gasket VAG 3.0TDI 12-", qty: "3 pcs.", days: "2 days", price: "$762", count: 2, highlighted: true, badge: "Dealer" },
+            { name: "Seal Ring 37*13mm AUDI, VW 2010-", qty: "5 pcs.", days: "3 days", price: "$957", count: 1, highlighted: false, badge: null },
         ],
-        summary: "от 1 дн.",
-        summaryPrice: "от 52 560 ₽",
+        summary: "from 1 day",
+        summaryPrice: "from $640",
         moreOffers: 9,
     }
 ];
@@ -55,11 +55,11 @@ const PartTable = ({ groups }) => {
         <div className="border border-[#E9ECEF] rounded-[16px] overflow-hidden bg-white">
             {/* Column Headers */}
             <div className="grid grid-cols-[2fr_4fr_1.5fr_1fr_2fr_auto] gap-4 px-6 py-3 bg-[#F8F9FA] border-b border-[#E9ECEF] text-[12px] font-semibold text-[#ADB5BD]">
-                <div className="flex items-center gap-1">Производитель и номер <ArrowUpDown size={12} /></div>
-                <div className="flex items-center gap-1">Описание <ArrowUpDown size={12} /></div>
-                <div className="flex items-center gap-1">Наличие <ArrowUpDown size={12} /></div>
-                <div className="flex items-center gap-1">Срок <ArrowUpDown size={12} /></div>
-                <div className="flex items-center gap-1">Цена <ArrowUpDown size={12} /></div>
+                <div className="flex items-center gap-1">Manufacturer & Number <ArrowUpDown size={12} /></div>
+                <div className="flex items-center gap-1">Description <ArrowUpDown size={12} /></div>
+                <div className="flex items-center gap-1">Stock <ArrowUpDown size={12} /></div>
+                <div className="flex items-center gap-1">Lead Time <ArrowUpDown size={12} /></div>
+                <div className="flex items-center gap-1">Price <ArrowUpDown size={12} /></div>
                 <div className="w-24"></div>
             </div>
 
@@ -71,7 +71,7 @@ const PartTable = ({ groups }) => {
                             <div className="flex items-center gap-2">
                                 <span className="text-[13px] font-black text-[#1A1B1E]">{group.supplier}</span>
                                 {group.trusted && (
-                                    <span className="text-[10px] bg-[#FF7A00]/10 text-[#FF7A00] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Рейтинг продаж</span>
+                                    <span className="text-[10px] bg-[#FF7A00]/10 text-[#FF7A00] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">Top Seller</span>
                                 )}
                             </div>
                             <div className="flex items-center gap-1">
@@ -82,7 +82,7 @@ const PartTable = ({ groups }) => {
                                 </span>
                             </div>
                         </div>
-                        <div className="text-[13px] text-[#6B7280] col-span-4 font-medium">Надёжный поставщик</div>
+                        <div className="text-[13px] text-[#6B7280] col-span-4 font-medium">Trusted Supplier</div>
                         <div></div>
                     </div>
 
@@ -132,7 +132,7 @@ const PartTable = ({ groups }) => {
                     <div className="grid grid-cols-[2fr_4fr_1.5fr_1fr_2fr_auto] gap-4 px-6 py-3 items-center bg-white border-b border-[#F1F3F5] last:border-b-0">
                         <div></div>
                         <button className="flex items-center gap-1 text-[13px] text-[#6C5DD3] font-semibold hover:underline w-fit">
-                            Ещё {group.moreOffers} предложений <ChevronDown size={15} />
+                            {group.moreOffers} more offers <ChevronDown size={15} />
                         </button>
                         <div></div>
                         <div className="text-[13px] text-[#6B7280]">{group.summary}</div>
@@ -170,17 +170,17 @@ const ProductDetailPage = () => {
                     BOSCH F 00V P01 008
                 </h1>
                 <p className="text-[14px] text-[#6B7280]">
-                    Шайба пламегасящая форсунки дизельной AUDI Q7 4M/4L 3.0/6.0 TDI 06–. TOUAREG 7P5
+                    Diesel Injector Flame-Arresting Washer AUDI Q7 4M/4L 3.0/6.0 TDI 06–. TOUAREG 7P5
                 </p>
             </div>
 
             {/* Section — Запрашиваемый номер */}
             <div className="mb-10">
                 <div className="flex items-center justify-between mb-5">
-                    <h2 className="text-[20px] font-black text-[#1A1B1E]">Запрашиваемый номер</h2>
+                    <h2 className="text-[20px] font-black text-[#1A1B1E]">Requested Part Number</h2>
                     <a href="#" className="flex items-center gap-1.5 text-[13px] text-[#6C5DD3] hover:underline font-medium">
                         <MapPin size={14} />
-                        Выбрать пункт выдачи заказов на карте
+                        Select pickup point on the map
                     </a>
                 </div>
                 <PartTable groups={mainParts} />
@@ -189,7 +189,7 @@ const ProductDetailPage = () => {
             {/* Section — Аналоги для номера */}
             <div className="mb-10">
                 <div className="flex items-center justify-between mb-5">
-                    <h2 className="text-[20px] font-black text-[#1A1B1E]">Аналоги для номера</h2>
+                    <h2 className="text-[20px] font-black text-[#1A1B1E]">Alternative Parts</h2>
                 </div>
                 <PartTable groups={analogueParts} />
             </div>

@@ -10,29 +10,29 @@ import oilBottles from '../assets/oil_bottles.png';
 
 // Product sets per section
 const automaolaProducts = [
-    { id: 1, name: "Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakeRed },
-    { id: 2, name: "Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodTire },
-    { id: 3, name: "Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakeDrilled },
+    { id: 1, name: "Mobil SUPER 3000 X1 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakeRed },
+    { id: 2, name: "Mobil SUPER 3000 X1 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodTire },
+    { id: 3, name: "Mobil SUPER 3000 X1 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakeDrilled },
 ];
 
 const recommendedProducts = [
-    { id: 1, name: "Genesis TITAN FD 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodGenesisOil },
-    { id: 2, name: "Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakeRed },
-    { id: 3, name: "Тормозной диск с колодками, комплект.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakePads },
-    { id: 4, name: "Шина летняя 205/55 R16, 1 шт.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodTire },
+    { id: 1, name: "Genesis TITAN FD 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodGenesisOil },
+    { id: 2, name: "Mobil SUPER 3000 X1 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakeRed },
+    { id: 3, name: "Brake Disc with Pads, Kit.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakePads },
+    { id: 4, name: "Summer Tyre 205/55 R16, 1 pc.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodTire },
 ];
 
 const frequentProducts = [
-    { id: 1, name: "Тормозной диск с колодками, комплект.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakePads },
-    { id: 2, name: "Шина летняя 205/55 R16, 1 шт.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodTire },
-    { id: 3, name: "Genesis TITAN FD 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodGenesisOil },
-    { id: 4, name: "Mobil SUPER 3000 X1 5W-40, 1 л. Масло моторное.", sku: "Артикул: 153789", price: "2 334 ₽", oldPrice: "2 864 ₽", rating: 4.0, reviews: 51, image: prodBrakeRed },
+    { id: 1, name: "Brake Disc with Pads, Kit.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakePads },
+    { id: 2, name: "Summer Tyre 205/55 R16, 1 pc.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodTire },
+    { id: 3, name: "Genesis TITAN FD 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodGenesisOil },
+    { id: 4, name: "Mobil SUPER 3000 X1 5W-40, 1L. Motor Oil.", sku: "SKU: 153789", price: "$28", oldPrice: "$35", rating: 4.0, reviews: 51, image: prodBrakeRed },
 ];
 
 const productsBySection = {
-    "Автомасла": automaolaProducts,
-    "Рекомендуем": recommendedProducts,
-    "Часто продаваемые": frequentProducts,
+    "Motor Oils": automaolaProducts,
+    "Recommended": recommendedProducts,
+    "Best Sellers": frequentProducts,
 };
 
 const StarRating = ({ rating, reviews }) => (
@@ -81,8 +81,8 @@ const ProductCard = ({ product }) => (
     </div>
 );
 
-const SectionProducts = ({ title, showAllText = "Все товары" }) => {
-    const isAutomaolaSection = title === "Автомасла";
+const SectionProducts = ({ title, showAllText = "All Products" }) => {
+    const isAutomaolaSection = title === "Motor Oils";
     const products = productsBySection[title] || recommendedProducts;
 
     return (
@@ -103,9 +103,9 @@ const SectionProducts = ({ title, showAllText = "Все товары" }) => {
                     <div className="bg-gradient-to-br from-[#7B6FD8] to-[#5B4EC8] rounded-[24px] p-7 flex flex-col justify-between text-white relative overflow-hidden group min-h-[400px]">
                         <div className="relative z-10">
                             <h3 className="text-[26px] font-black leading-tight">
-                                Автомасла №1 <br />
-                                от официальных <br />
-                                дилеров
+                                Motor Oils #1 <br />
+                                from official <br />
+                                dealers
                             </h3>
                         </div>
                         {/* Oil bottles image */}

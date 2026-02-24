@@ -11,39 +11,39 @@ const Navbar = () => {
                     {/* Catalog Button */}
                     <button className="bg-[#6C5DD3] text-white px-6 py-3 rounded-xl flex items-center gap-3 font-bold text-[14px] hover:bg-[#5A4BB1] transition-all active:scale-95 shadow-sm">
                         <LayoutGrid size={18} />
-                        Все категории
+                        All Categories
                     </button>
 
                     {/* Navigation Links */}
                     <ul className="flex items-center gap-0 overflow-hidden">
                         <li>
                             <a href="#" className="px-3 py-2.5 rounded-xl text-[13px] font-bold text-[#1A1B1E] hover:text-[#6C5DD3] hover:bg-[#F8F9FA] transition-all whitespace-nowrap">
-                                Запчасти для ТО
+                                Maintenance Parts
                             </a>
                         </li>
                         <li>
                             <a href="#" className="px-3 py-2.5 rounded-xl text-[13px] font-bold text-[#1A1B1E] hover:text-[#6C5DD3] hover:bg-[#F8F9FA] transition-all whitespace-nowrap">
-                                Автомасла
+                                Motor Oils
                             </a>
                         </li>
                         <li>
                             <Link to="/catalog" className="px-3 py-2.5 rounded-xl text-[13px] font-bold bg-[#F1F3F5] text-[#1A1B1E] transition-all whitespace-nowrap hover:text-[#6C5DD3]">
-                                Оригинальные запчасти
+                                Original Parts
                             </Link>
                         </li>
                         <li>
                             <a href="#" className="px-3 py-2.5 rounded-xl text-[13px] font-bold text-[#1A1B1E] hover:text-[#6C5DD3] hover:bg-[#F8F9FA] transition-all whitespace-nowrap">
-                                Неоригинальные запчасти
+                                Aftermarket Parts
                             </a>
                         </li>
                         <li>
                             <a href="#" className="px-3 py-2.5 rounded-xl text-[13px] font-bold text-[#1A1B1E] hover:text-[#6C5DD3] hover:bg-[#F8F9FA] transition-all whitespace-nowrap">
-                                Лампочки
+                                Bulbs
                             </a>
                         </li>
                         <li>
                             <a href="#" className="px-3 py-2.5 rounded-xl text-[13px] font-bold text-[#1A1B1E] hover:text-[#6C5DD3] hover:bg-[#F8F9FA] transition-all whitespace-nowrap">
-                                Аккумуляторы
+                                Batteries
                             </a>
                         </li>
                     </ul>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             5
                         </span>
                     </div>
-                    <span className="font-bold text-[#1A1B1E] text-[15px]">Корзина</span>
+                    <span className="font-bold text-[#1A1B1E] text-[15px]">Cart</span>
                 </button>
             </div>
         </nav>

@@ -3,20 +3,20 @@ import { MessageSquare } from 'lucide-react';
 
 const navLinks = [
     {
-        title: "Меню компании",
-        links: ["Что такое Oner", "Реквизиты и информация", "Новости", "Вакансии", "Поставщикам", "Контакты"],
+        title: "Company Menu",
+        links: ["About Oner", "Details & Information", "News", "Careers", "For Suppliers", "Contact Us"],
     },
     {
-        title: "Каталоги",
-        links: ["Оригинальные запчасти", "Неоригинальные запчасти", "Запчасти для ТО", "Автомасла", "Аккумуляторы", "Распродажа"],
+        title: "Catalogs",
+        links: ["Original Parts", "Aftermarket Parts", "Maintenance Parts", "Motor Oils", "Batteries", "Sale"],
     },
     {
-        title: "Помощь",
-        links: ["Часто задаваемые вопросы", "Консультация Online", "Оплата заказа", "Доставка заказа", "Возврат товара", "Забыл пароль"],
+        title: "Help",
+        links: ["FAQ", "Online Consultation", "Order Payment", "Order Delivery", "Returns", "Forgot Password"],
     },
     {
-        title: "Товары и бренды",
-        links: ["Список брендов", "Популярные товары", "Наличие на складах"],
+        title: "Products & Brands",
+        links: ["Brand List", "Popular Products", "Warehouse Stock"],
     },
 ];
 
@@ -56,8 +56,8 @@ const Footer = () => {
                                 <MessageSquare size={18} className="text-white" />
                             </div>
                             <div>
-                                <p className="text-[14px] font-bold text-white leading-tight">Консультация Online</p>
-                                <p className="text-[12px] text-[#9B9BAE] mt-0.5">Задавайте вопросы</p>
+                                <p className="text-[14px] font-bold text-white leading-tight">Online Consultation</p>
+                                <p className="text-[12px] text-[#9B9BAE] mt-0.5">Ask us anything</p>
                             </div>
                         </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
                                 <div className="absolute inset-0 bg-[#27AE60] rounded-full animate-ping opacity-40"></div>
                             </div>
                             <p className="text-[13px] text-[#9B9BAE] leading-snug">
-                                Сервис работает в <span className="text-white font-semibold">обычном режиме</span>
+                                Service is operating in <span className="text-white font-semibold">normal mode</span>
                             </p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const Footer = () => {
 
                     {/* Payment Methods */}
                     <div className="flex items-center gap-3">
-                        <span className="text-[12px] text-[#6B6B80] mr-1">Принимаем к оплате</span>
+                        <span className="text-[12px] text-[#6B6B80] mr-1">We accept payment</span>
                         {/* VISA */}
                         <div className="h-8 px-3 bg-white rounded-md flex items-center justify-center">
                             <span className="text-[#1A1F71] font-black text-[14px] italic tracking-tight">VISA</span>
@@ -97,14 +97,14 @@ const Footer = () => {
                         </div>
                         {/* МИР */}
                         <div className="h-8 px-3 bg-white rounded-md flex items-center justify-center">
-                            <span className="text-[#006A4E] font-black text-[13px]">МИР</span>
+                            <span className="text-[#006A4E] font-black text-[13px]">MIR</span>
                         </div>
                     </div>
 
                     {/* Legal Links */}
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-[12px] text-[#6B6B80] hover:text-white transition-colors">Оферта</a>
-                        <a href="#" className="text-[12px] text-[#6B6B80] hover:text-white transition-colors">Конфиденциальность</a>
+                        <a href="#" className="text-[12px] text-[#6B6B80] hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" className="text-[12px] text-[#6B6B80] hover:text-white transition-colors">Privacy Policy</a>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ const Header = () => {
                     <div className="relative flex items-center bg-[#F1F3F5] rounded-xl border border-transparent focus-within:border-[#6C5DD3] transition-all">
                         <input
                             type="text"
-                            placeholder="Введите номер запчасти или VIN"
+                            placeholder="Enter part number or VIN"
                             className="w-full bg-transparent px-5 py-3.5 outline-none text-[14px] text-[#1A1B1E] placeholder:text-[#ADB5BD]"
                         />
                         <div className="pr-5">
@@ -38,7 +38,7 @@ const Header = () => {
                     {/* Location */}
                     <div className="flex items-center gap-2 cursor-pointer group">
                         <MapPin size={20} className="text-[#6C5DD3] group-hover:-translate-y-0.5 transition-transform" />
-                        <span className="text-[14px] font-medium text-[#1A1B1E] group-hover:text-[#6C5DD3] transition-colors">Санкт-Петербург</span>
+                        <span className="text-[14px] font-medium text-[#1A1B1E] group-hover:text-[#6C5DD3] transition-colors">Saint Petersburg</span>
                     </div>
 
                     {/* Phone */}
@@ -50,7 +50,7 @@ const Header = () => {
                     {/* Login */}
                     <div className="flex items-center gap-2 cursor-pointer group">
                         <User size={20} className="text-[#6C5DD3] group-hover:scale-110 transition-transform" />
-                        <span className="text-[14px] font-medium text-[#1A1B1E] group-hover:text-[#6C5DD3] transition-colors">Вход / Регистрация</span>
+                        <span className="text-[14px] font-medium text-[#1A1B1E] group-hover:text-[#6C5DD3] transition-colors">Sign In / Register</span>
                     </div>
                 </div>
             </div>

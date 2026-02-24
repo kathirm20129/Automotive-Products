@@ -6,24 +6,24 @@ import bannerBrake from '../assets/product_brake_red.png';
 
 const banners = [
     {
-        title: "Моторные масла Genesis",
-        buttonText: "Перейти",
+        title: "Genesis Motor Oils",
+        buttonText: "Shop Now",
         color: "bg-[#EEF2FF]",
         btnColor: "bg-[#6C5DD3] text-white",
         image: oilBottles,
         accent: "bg-[#FF7A00]"
     },
     {
-        title: "Шины зимние дешевле",
-        buttonText: "Выбрать",
+        title: "Winter Tires on Sale",
+        buttonText: "Browse",
         color: "bg-[#F8F9FA]",
         btnColor: "bg-[#6C5DD3] text-white",
         image: bannerTire,
         accent: "bg-[#FF7A00]"
     },
     {
-        title: "Запчасти для ТО",
-        buttonText: "Смотреть",
+        title: "Maintenance Parts",
+        buttonText: "View All",
         color: "bg-[#EEF2FF]",
         btnColor: "bg-[#6C5DD3] text-white",
         image: bannerBrake,

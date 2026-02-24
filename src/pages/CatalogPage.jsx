@@ -67,7 +67,7 @@ const CatalogPage = () => {
         <main className="max-w-[1240px] mx-auto px-4 py-10 min-h-screen">
             {/* Page Title */}
             <h1 className="text-[28px] font-black text-[#1A1B1E] mb-10 tracking-tight">
-                Каталоги оригинальных запчастей
+                Catalog of Original Auto Parts
             </h1>
 
             {/* Two Search Boxes */}
@@ -75,14 +75,14 @@ const CatalogPage = () => {
                 {/* VIN Search */}
                 <div className="bg-white rounded-[20px] border border-[#E9ECEF] p-6 shadow-sm">
                     <p className="text-[14px] font-semibold text-[#1A1B1E] mb-4">
-                        Поиск модели по VIN-номеру:
+                        Search model by VIN number:
                     </p>
                     <div className="relative">
                         <input
                             type="text"
                             value={vinQuery}
                             onChange={(e) => setVinQuery(e.target.value)}
-                            placeholder="Введите VIN"
+                            placeholder="Enter VIN"
                             className="w-full bg-[#F8F9FA] border border-[#E9ECEF] rounded-xl px-4 py-3 pr-14 text-[14px] outline-none focus:border-[#6C5DD3] transition-colors placeholder:text-[#ADB5BD]"
                         />
                         <button className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-[#6C5DD3] rounded-lg flex items-center justify-center hover:bg-[#5A4BB1] transition-colors active:scale-95">
@@ -90,21 +90,21 @@ const CatalogPage = () => {
                         </button>
                     </div>
                     <p className="text-[11px] text-[#ADB5BD] mt-2">
-                        Например: WAUB5481N1N11054
+                        Example: WAUB5481N1N11054
                     </p>
                 </div>
 
                 {/* Body Code Search */}
                 <div className="bg-white rounded-[20px] border border-[#E9ECEF] p-6 shadow-sm">
                     <p className="text-[14px] font-semibold text-[#1A1B1E] mb-4">
-                        Поиск модели по коду/номеру кузова:
+                        Search model by body code/number:
                     </p>
                     <div className="relative">
                         <input
                             type="text"
                             value={bodyQuery}
                             onChange={(e) => setBodyQuery(e.target.value)}
-                            placeholder="Введите код/номер кузова"
+                            placeholder="Enter body code/number"
                             className="w-full bg-[#F8F9FA] border border-[#E9ECEF] rounded-xl px-4 py-3 pr-14 text-[14px] outline-none focus:border-[#6C5DD3] transition-colors placeholder:text-[#ADB5BD]"
                         />
                         <button className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-[#6C5DD3] rounded-lg flex items-center justify-center hover:bg-[#5A4BB1] transition-colors active:scale-95">
@@ -112,7 +112,7 @@ const CatalogPage = () => {
                         </button>
                     </div>
                     <p className="text-[11px] text-[#ADB5BD] mt-2">
-                        Например: AGH30-01S9H4
+                        Example: AGH30-01S9H4
                     </p>
                 </div>
             </div>
@@ -120,7 +120,7 @@ const CatalogPage = () => {
             {/* Alphabetical Brand Catalog */}
             <div>
                 <h2 className="text-[18px] font-bold text-[#1A1B1E] mb-7">
-                    Поиск модели по каталогу производителя:
+                    Search model by manufacturer catalog:
                 </h2>
 
                 {/* 4-column layout exactly like Figma */}

@@ -16,17 +16,17 @@ function HomePage() {
     <main className="flex-grow">
       <Hero />
       <CategoryGrid />
-      <SectionProducts title="Автомасла" showAllText="Все автомасла" />
+      <SectionProducts title="Motor Oils" showAllText="All Motor Oils" />
       <MiniBanners />
-      <SectionProducts title="Рекомендуем" />
-      <SectionProducts title="Часто продаваемые" />
+      <SectionProducts title="Recommended" />
+      <SectionProducts title="Best Sellers" />
     </main>
   );
 }
 
 function App() {
   useEffect(() => {
-    document.title = "ONER.RU - Оригинальные запчасти и масла";
+    document.title = "ONER.RU - Original Auto Parts & Oils";
   }, []);
 
   return (
