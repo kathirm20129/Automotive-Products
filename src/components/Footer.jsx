@@ -80,7 +80,7 @@ const Footer = () => {
                 <div className="max-w-[1240px] mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-5">
                     {/* Copyright */}
                     <p className="text-[12px] text-[#6B6B80] whitespace-nowrap">
-                        Copyright © ООО «Oner.ru» 2021. All rights reserved.
+                        Copyright © Oner.ru LLC 2021. All rights reserved.
                     </p>
 
                     {/* Payment Methods */}

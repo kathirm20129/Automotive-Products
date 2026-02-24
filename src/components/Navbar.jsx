@@ -9,7 +9,7 @@ const Navbar = () => {
                 {/* Left side: Catalog and Nav Links */}
                 <div className="flex items-center gap-3 min-w-0 flex-1">
                     {/* Catalog Button */}
-                    <button className="bg-[#6C5DD3] text-white px-6 py-3 rounded-xl flex items-center gap-3 font-bold text-[14px] hover:bg-[#5A4BB1] transition-all active:scale-95 shadow-sm">
+                    <button className="shrink-0 bg-[#6C5DD3] text-white px-6 py-3 rounded-xl flex items-center gap-3 font-bold text-[14px] hover:bg-[#5A4BB1] transition-all active:scale-95 shadow-sm">
                         <LayoutGrid size={18} />
                         All Categories
                     </button>

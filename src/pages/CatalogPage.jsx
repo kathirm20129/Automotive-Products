@@ -8,7 +8,7 @@ const brandsByLetter = {
     B: [{ name: "BMW Motorrad" }, { name: "BMW" }, { name: "Baw" }, { name: "Buick" }],
     C: [{ name: "Cadillac" }, { name: "Chevrolet" }, { name: "Chrysler" }, { name: "Citroen" }],
     D: [{ name: "Dacia" }, { name: "Daewoo" }, { name: "Daewoo" }, { name: "Dodge" }],
-    F: [{ name: "FAW" }, { name: "Fiat Professional" }, { name: "Fiat" }, { name: "Ford" }, { name: "Foton груз-ки" }],
+    F: [{ name: "FAW" }, { name: "Fiat Professional" }, { name: "Fiat" }, { name: "Ford" }, { name: "Foton Trucks" }],
     G: [{ name: "GMC" }, { name: "Geely" }, { name: "Great Wall" }],
     H: [{ name: "Holden" }, { name: "Honda Moto" }, { name: "Honda" }, { name: "Howo" }, { name: "Hummer" }, { name: "Hyundai" }],
     J: [{ name: "Holden" }, { name: "Honda Moto" }, { name: "Honda" }, { name: "Howo" }, { name: "Hummer" }, { name: "Hyundai" }],
